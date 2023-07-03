@@ -2,7 +2,7 @@ import type { Actions, PageServerLoad } from "./$types";
 import { adminDB } from "$lib/server/admin";
 import { error, fail, redirect } from "@sveltejs/kit";
 
-export const load = (async ({ cookies }) => {
+export const load = (async ({ locals, cookies, params }) => {
   const uid = locals.userID;
 
   if (!uid)
