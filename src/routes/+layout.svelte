@@ -1,6 +1,6 @@
 <script>
   import "../app.css";
-  import { user, userData } from "$lib/firebase.js";
+  import { user, userData } from "$lib/firebase";
 
   $user;
   $userData;
